@@ -1,0 +1,141 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: #F8F5F2;
+	color: #2E1F1A;
+}
+
+.admin-container {
+	display: flex;
+	min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+	width: 260px;
+	background: #FFFFFF;
+	border-right: 1px solid #ECE7E2;
+	padding: 30px 20px;
+}
+
+.brand {
+	font-size: 32px;
+	font-family: 'Playfair Display', serif;
+	color: #4E342E;
+	margin-bottom: 50px;
+}
+
+.menu {
+	list-style: none;
+}
+
+.menu li {
+	margin-bottom: 12px;
+}
+
+.menu a {
+	text-decoration: none;
+	color: #6A5A52;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 14px 18px;
+	border-radius: 14px;
+	transition: .3s ease;
+}
+
+.menu a:hover {
+	background: #F3ECE8;
+	color: #4E342E;
+	transform: translateX(5px);
+}
+
+.menu .active {
+	background: #F3ECE8;
+	color: #4E342E;
+	border-left: 4px solid #D4AF37;
+}
+
+/* MAIN */
+.main {
+	flex: 1;
+	padding: 30px;
+}
+
+/* HEADER */
+.top-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.search-box {
+	width: 320px;
+	padding: 14px 18px;
+	border: none;
+	background: white;
+	border-radius: 14px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, .05);
+}
+
+.admin-badge {
+	background: #4E342E;
+	color: white;
+	padding: 12px 22px;
+	border-radius: 40px;
+}
+
+.page-title {
+	font-size: 52px;
+	color: #4E342E;
+	font-family: 'Playfair Display', serif;
+	margin-top: 20px;
+}
+
+.page-subtitle {
+	color: #7C6D65;
+	margin-top: 12px;
+	font-size: 18px;
+}
+
+.dashboard-grid {
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 24px;
+}
+
+.dashboard-card {
+	background: white;
+	border-radius: 24px;
+	padding: 28px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, .05);
+	transition: .3s ease;
+}
+
+.dashboard-card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, .08);
+}
+
+.dashboard-card h3 {
+	color: #4E342E;
+	margin-bottom: 12px;
+}
+
+.dashboard-card p {
+	color: #777;
+}
+
+.dashboard-card{
+
+    text-decoration:none;
+
+    color:inherit;
+}

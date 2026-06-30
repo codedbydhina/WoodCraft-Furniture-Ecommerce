@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: #F8F5F2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.confirm-card {
+	width: 650px;
+	background: white;
+	padding: 50px;
+	border-radius: 30px;
+	text-align: center;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, .08);
+	animation: fadeIn .6s ease;
+}
+
+.warning-icon {
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	border-radius: 50%;
+	background: #FFF3E0;
+	color: #D97706;
+	font-size: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 25px;
+}
+
+.confirm-card h1 {
+	color: #4E342E;
+	font-family: 'Playfair Display', serif;
+	margin-bottom: 15px;
+}
+
+.confirm-card p {
+	color: #7C6D65;
+	font-size: 16px;
+	line-height: 1.8;
+	margin-bottom: 35px;
+}
+
+.product-name {
+	color: #8B0000;
+	font-weight: 600;
+}
+
+.btn-group {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+}
+
+.cancel-btn {
+	text-decoration: none;
+	background: #EFE7E2;
+	color: #4E342E;
+	padding: 14px 30px;
+	border-radius: 14px;
+	transition: .3s;
+}
+
+.cancel-btn:hover {
+	transform: translateY(-3px);
+}
+
+.delete-btn {
+	background: #8B0000;
+	color: white;
+	border: none;
+	padding: 14px 30px;
+	border-radius: 14px;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.delete-btn:hover {
+	background: #B91C1C;
+	transform: translateY(-3px);
+}
+
+
+keyframes fadeIn {from { opacity:0;
+	transform: translateY(30px);
+}
+
+to {
+	opacity: 1;
+	transform: translateY(0);
+}
+}

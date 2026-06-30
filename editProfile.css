@@ -1,0 +1,162 @@
+@import
+	url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap')
+	;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background: #F8F5F2;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 20px;
+}
+
+/* =========================
+   PROFILE CONTAINER
+========================= */
+.profile-container {
+	width: 100%;
+	max-width: 650px;
+	background: #ffffff;
+	padding: 40px;
+	border-radius: 24px;
+	box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+	position: relative;
+}
+
+/* =========================
+   BACK BUTTON
+========================= */
+.back-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	text-decoration: none;
+	color: #4E342E;
+	font-weight: 600;
+	margin-bottom: 25px;
+	transition: 0.3s;
+}
+
+.back-btn:hover {
+	color: #D4AF37;
+}
+
+/* =========================
+   TITLE
+========================= */
+.profile-container h1 {
+	font-size: 32px;
+	color: #2E1F1A;
+	margin-bottom: 30px;
+	font-weight: 700;
+}
+
+/* =========================
+   SUCCESS MESSAGE
+========================= */
+.success-box {
+	background: #E8F5E9;
+	color: #2E7D32;
+	padding: 14px 18px;
+	border-radius: 12px;
+	margin-bottom: 25px;
+	font-weight: 500;
+	border-left: 5px solid #2E7D32;
+}
+
+/* =========================
+   FORM
+========================= */
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+
+label {
+	color: #4E342E;
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 4px;
+}
+
+input {
+	width: 100%;
+	padding: 14px 18px;
+	border: 1px solid #ddd;
+	border-radius: 14px;
+	font-size: 15px;
+	outline: none;
+	transition: 0.3s;
+	background: #FAFAFA;
+}
+
+input:focus {
+	border-color: #D4AF37;
+	background: white;
+	box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.15);
+}
+
+/* =========================
+   BUTTON
+========================= */
+button {
+	margin-top: 15px;
+	border: none;
+	background: #4E342E;
+	color: white;
+	padding: 15px;
+	border-radius: 14px;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+button:hover {
+	background: #2E1F1A;
+	transform: translateY(-2px);
+}
+
+button:active {
+	transform: translateY(0);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media ( max-width :768px) {
+	.profile-container {
+		padding: 30px 25px;
+	}
+	.profile-container h1 {
+		font-size: 28px;
+	}
+	input {
+		padding: 13px 15px;
+	}
+	button {
+		width: 100%;
+	}
+}
+
+@media ( max-width :480px) {
+	body {
+		padding: 20px 12px;
+	}
+	.profile-container {
+		padding: 25px 18px;
+		border-radius: 18px;
+	}
+	.profile-container h1 {
+		font-size: 24px;
+	}
+}

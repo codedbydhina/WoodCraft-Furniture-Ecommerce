@@ -1,0 +1,156 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+	background: #F8F5F2;
+	color: #2E1F1A;
+}
+
+.page-container {
+	max-width: 1900px;
+	margin: auto;
+	padding: 50px 60px;
+}
+
+.back-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	text-decoration: none;
+	color: #4E342E;
+	font-weight: 600;
+	margin-bottom: 30px;
+	transition: .3s;
+}
+
+.back-btn:hover {
+	color: #D4AF37;
+}
+
+.page-title {
+	font-size: 42px;
+	font-weight: 800;
+	margin-bottom: 10px;
+	color: #2E1F1A;
+}
+
+.search-keyword {
+	font-size: 18px;
+	color: #7A6A63;
+	margin-bottom: 15px;
+}
+
+.search-keyword strong {
+	color: #D4AF37;
+}
+
+.product-count {
+	margin-bottom: 35px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #7A6A63;
+}
+
+.product-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 30px;
+}
+
+.product-card {
+	background: #fff;
+	border-radius: 22px;
+	overflow: hidden;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+	transition: all .3s ease;
+}
+
+.product-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 15px 35px rgba(0, 0, 0, .12);
+}
+
+.product-card img {
+	width: 100%;
+	height: 280px;
+	object-fit: cover;
+}
+
+.product-info {
+	padding: 22px;
+}
+
+.product-info h3 {
+	font-size: 20px;
+	font-weight: 700;
+	color: #2E1F1A;
+	margin-bottom: 12px;
+}
+
+.price {
+	font-size: 24px;
+	font-weight: 800;
+	color: #D4AF37;
+	margin-bottom: 12px;
+}
+
+.stock {
+	font-size: 15px;
+	font-weight: 600;
+	color: #2E7D32;
+	margin-bottom: 20px;
+}
+
+.view-btn {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	padding: 14px;
+	border-radius: 12px;
+	background: #D4AF37;
+	color: #2E1F1A;
+	font-weight: 700;
+	transition: .3s;
+}
+
+.view-btn:hover {
+	background: #C59B22;
+}
+
+.empty-search {
+	text-align: center;
+	padding: 120px 20px;
+}
+
+.empty-search i {
+	font-size: 80px;
+	color: #D4AF37;
+	margin-bottom: 25px;
+}
+
+.empty-search h2 {
+	font-size: 32px;
+	margin-bottom: 15px;
+	color: #2E1F1A;
+}
+
+.empty-search p {
+	color: #7A6A63;
+	font-size: 18px;
+}
+
+@media ( max-width :768px) {
+	.page-container {
+		padding: 30px 20px;
+	}
+	.page-title {
+		font-size: 32px;
+	}
+	.product-grid {
+		grid-template-columns: 1fr;
+	}
+}

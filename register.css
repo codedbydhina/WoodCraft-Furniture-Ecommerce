@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: #F8F5F2;
+	height: 100vh;
+}
+
+.container {
+	display: flex;
+	height: 100vh;
+}
+
+.left-panel {
+	flex: 1.2;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url('../images/register-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.overlay {
+	color: white;
+	text-align: center;
+	padding: 40px;
+}
+
+.overlay h1 {
+	font-size: 3rem;
+	font-family: 'Playfair Display', serif;
+	margin-bottom: 20px;
+}
+
+.overlay p {
+	font-size: 1.1rem;
+}
+
+.right-panel {
+	flex: 0.8;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.register-card {
+	width: 420px;
+	background: white;
+	padding: 40px;
+	border-radius: 20px;
+	box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.register-card h2 {
+	color: #4E342E;
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	margin-bottom: 10px;
+}
+
+.subtitle {
+	text-align: center;
+	margin-bottom: 25px;
+	color: #777;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+input {
+	padding: 14px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	font-size: 15px;
+}
+
+input:focus {
+	outline: none;
+	border-color: #D4AF37;
+}
+
+button {
+	background: #4E342E;
+	color: white;
+	border: none;
+	padding: 15px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+button:hover {
+	background: #D4AF37;
+	color: #2E1F1A;
+	transform: translateY(-2px);
+}
+
+.login-link {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.login-link a {
+	color: #D4AF37;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+@media ( max-width :900px) {
+	.left-panel {
+		display: none;
+	}
+	.right-panel {
+		flex: 1;
+	}
+}
